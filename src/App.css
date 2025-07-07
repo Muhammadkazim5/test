@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +42,71 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.auth-container {
+  max-width: 350px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-container h2 {
+  margin-bottom: 1rem;
+}
+
+.auth-container label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.auth-container input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.auth-container .error {
+  color: #b00020;
+  margin-bottom: 1rem;
+}
+
+.auth-container button[type='submit'],
+.auth-container .link-btn {
+  background: #646cff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.auth-container button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-container .link-btn {
+  background: none;
+  color: #646cff;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background: #f6f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
